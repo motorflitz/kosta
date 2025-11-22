@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Qualitätseck | Frankfurt am Main</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#0F1115', // Deep charcoal, almost black
+                gold: '#C5A059', // Muted, expensive gold
+                cream: '#F5F5F2', // Warm stone/paper
+                gray: '#2A2D35',
+              }
+            },
+            backgroundImage: {
+              'texture': "url('https://www.transparenttextures.com/patterns/concrete-wall.png')",
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<style>
+  /* Custom scrollbar for webkit */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0F1115;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C5A059; 
+  }
+</style>
+</head>
+  <body class="bg-brand-cream text-brand-dark antialiased selection:bg-brand-gold selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
